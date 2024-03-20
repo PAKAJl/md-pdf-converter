@@ -1,0 +1,166 @@
+[
+    {
+        "label": "markdown",
+        "importPath": "markdown",
+        "description": "markdown",
+        "isExtraImport": true,
+        "detail": "markdown",
+        "documentation": {}
+    },
+    {
+        "label": "pisa",
+        "importPath": "xhtml2pdf",
+        "description": "xhtml2pdf",
+        "isExtraImport": true,
+        "detail": "xhtml2pdf",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "TableExtension",
+        "importPath": "markdown.extensions.tables",
+        "description": "markdown.extensions.tables",
+        "isExtraImport": true,
+        "detail": "markdown.extensions.tables",
+        "documentation": {}
+    },
+    {
+        "label": "convert_md_to_pdf",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def convert_md_to_pdf(\n    md_path: str,\n    style_path: str,\n    pdf_path: str,\n    font_path: str,\n    pdf_name: Optional[str]=None\n) -> str:\n    \"\"\"\n    Функция для создания pdf из MD файла\n    \"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    parse_from_dir()\ndef parse_from_dir():\n    if path.exists(PATH_PDF_FILES):\n        shutil.rmtree(PATH_PDF_FILES)\n    os.mkdir(PATH_PDF_FILES)\n    dirs = []\n    dirs += os.listdir(PATH_MD_FILES)\n    for dir in dirs:\n        if (dir != '.DS_Store'):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "parse_from_dir",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def parse_from_dir():\n    if path.exists(PATH_PDF_FILES):\n        shutil.rmtree(PATH_PDF_FILES)\n    os.mkdir(PATH_PDF_FILES)\n    dirs = []\n    dirs += os.listdir(PATH_MD_FILES)\n    for dir in dirs:\n        if (dir != '.DS_Store'):\n            dir_pdf_path = PATH_PDF_FILES+ '/' + dir\n            dir_md_path = PATH_MD_FILES + '/' + dir",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "PLACEHOLDER",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "PLACEHOLDER = \"<--!-->\"\nDEFAULT_FONT = \"Roboto-Regular.ttf\"\nPATH_MD_FILES = '/Users/pakajl/ObsidainVault/Robocode/Планы уроков'\nPATH_PDF_FILES = '/Users/pakajl/Планы УроковPy'\nSTYLE_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/style.html'\nFONT_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/Roboto-Regular.ttf'\ndef convert_md_to_pdf(\n    md_path: str,\n    style_path: str,\n    pdf_path: str,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_FONT",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "DEFAULT_FONT = \"Roboto-Regular.ttf\"\nPATH_MD_FILES = '/Users/pakajl/ObsidainVault/Robocode/Планы уроков'\nPATH_PDF_FILES = '/Users/pakajl/Планы УроковPy'\nSTYLE_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/style.html'\nFONT_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/Roboto-Regular.ttf'\ndef convert_md_to_pdf(\n    md_path: str,\n    style_path: str,\n    pdf_path: str,\n    font_path: str,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "PATH_MD_FILES",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "PATH_MD_FILES = '/Users/pakajl/ObsidainVault/Robocode/Планы уроков'\nPATH_PDF_FILES = '/Users/pakajl/Планы УроковPy'\nSTYLE_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/style.html'\nFONT_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/Roboto-Regular.ttf'\ndef convert_md_to_pdf(\n    md_path: str,\n    style_path: str,\n    pdf_path: str,\n    font_path: str,\n    pdf_name: Optional[str]=None",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "PATH_PDF_FILES",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "PATH_PDF_FILES = '/Users/pakajl/Планы УроковPy'\nSTYLE_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/style.html'\nFONT_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/Roboto-Regular.ttf'\ndef convert_md_to_pdf(\n    md_path: str,\n    style_path: str,\n    pdf_path: str,\n    font_path: str,\n    pdf_name: Optional[str]=None\n) -> str:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "STYLE_PATH",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "STYLE_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/style.html'\nFONT_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/Roboto-Regular.ttf'\ndef convert_md_to_pdf(\n    md_path: str,\n    style_path: str,\n    pdf_path: str,\n    font_path: str,\n    pdf_name: Optional[str]=None\n) -> str:\n    \"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_PATH",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "FONT_PATH = '/Users/pakajl/Projects/Python/md-pdf-converter-master/Roboto-Regular.ttf'\ndef convert_md_to_pdf(\n    md_path: str,\n    style_path: str,\n    pdf_path: str,\n    font_path: str,\n    pdf_name: Optional[str]=None\n) -> str:\n    \"\"\"\n    Функция для создания pdf из MD файла",
+        "detail": "main",
+        "documentation": {}
+    }
+]
